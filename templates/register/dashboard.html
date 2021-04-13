@@ -1,0 +1,115 @@
+ {% extends 'base.html' %}
+
+{% block content %} 
+
+<br> <br> <br> <main id="main" class="justify-content-center">
+    <div class="container offset-lg-2 ">
+
+    <div class="card col-lg-8 shadow-lg ">
+      <h5 class="card-header bg-secondary text-white text-center">hello, {{user.last_name}} {{user.first_name}}</h5>
+      {% include 'partials/_alert.html' %}
+      
+      <div class="card-body">
+        <div class="row justify-content-lg-center">
+          <div class="col-sm-2">
+            <div class="cards">
+              <div class="card-body">
+                <img src="static/img/IMG-20210401-WA0031.jpg" style="border-radius: 50%; height: 80px;" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card shadow-lg">
+              <h5 class="card-header bg-secondary text-white text-center">{{user.username}}</h5>
+              <div class="card-body">
+               
+                <p class="card-text" style="color: #ef7f4d;">Referral Earning:#0</p>
+                <p class="card-text" style="color: #ef7f4d;">Activities Earning :#0</p>
+                <p class="card-text" style="color: #4ddcef;">package: Basic</p>
+                {% comment %} {% if ref %} {% endcomment %}
+                  {% comment %} {% for p in ref %} {% endcomment %}
+
+                <p class="card-text" style="color: #4ddcef;">Referral Link: {{ref}} </p>
+                  {% comment %} {% endfor %} {% endcomment %}
+                {% comment %} {% else%}
+                  Go and  reffal
+                {% endif %} {% endcomment %}
+                <a href="#" class="btn btn-info text-white">withdraw</a>    <a href="#" class="btn btn-dark">daily task</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 mt-5">
+          <div class="card shadow-sm">
+            <div class="card-body bg-light rounded-3">
+              <div class="row">
+                <div class="col-6">
+              <h5 class="card-title text-success bx bx-calendar"> Date reg: {{user.date_joined}}</h5>  <hr>
+            </div>
+            <div class="col-6">
+              <h5 class="card-title text-warning bx bx-calendar-edit"> Next Withdraw: sun Feb 21 2021</h5>  <hr>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+            <h5 class="card-title text-danger bx bx-power-off"> Unpaid Referral: 1</h5>  <hr>
+          </div>
+          <div class="col-6">
+            <h5 class="card-title  text-primary bx bx-money"> Paid Referral: 1</h5>  <hr>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+          <h5 class="card-title  bx bx-user-plus" style="color: rgb(119, 139, 46);"> Current Referrals:</h5>  <hr>
+        </div>
+        <div class="col-6">
+          <h5 class="card-title  bx bx-user" style="color: steelblue;"> Total Referrals:</h5>  <hr>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+        <h5 class="card-title text-whites bx bx-move" style="color: purple;">Total Earning:</h5>  <hr>
+      </div>
+      <div class="col-6">
+        <h5 class="card-title  bx bx-plus-circle" style="color:coral;"> cycles:0</h5>  <hr>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+      <h5 class="card-title text-whites bx bx-arrow-back" style="color: rgb(0, 128, 79);"> Previous Referrals:</h5> <hr>
+    </div>
+    <div class="col-6">
+      <h5 class="card-title  bx bx-money" style="color:rgb(80, 217, 255);"> Available Earning:0</h5>  <hr>
+    </div>
+    </div>
+          <div class="offset-lg-4">
+             <a href="#" class="btn btn-warnings text-white rounded-0" style="background-color: darkgreen;">Renew</a><a href="#" class="btn btn-info text-white rounded-0" style="background-color: darkorchid;">Upgrade</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 mt-3">
+         
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="coupon code">
+          
+        </div>
+        <div>
+        <a href="#" class="btn btn-dark text-white offset-lg-4 offset-md-2">Renew coupon</a>
+         <a href="javascript:{document.getElementById('logout').submit()}" 
+        class="btn btn-dark text-white offset-lg-4 offset-md-2">LogOut</a><form action="{% url 'logout'%}" method="POST" id="logout">
+        {% csrf_token %}
+        <input type="hidden"/>
+        </from></div>
+        
+     
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  </main> <br> <br>
+  {% endblock %}

@@ -1,0 +1,76 @@
+ {% extends 'base.html' %}
+
+{% block content %} 
+
+ <main id="main">
+    <br>
+    <div class="section-title mt-5" data-aos="fade-up">
+      <h2>Fill the Form correctly</h2>
+      
+    </div>
+      {% include 'partials/_alert.html' %}
+  <br> <div class="container col-10">
+    <form action="{% url 'register'%}" method="POST">
+    {% csrf_token %}
+      <div class="mb-3 " >
+        <input type="name" name="last_name" class="form-control rounded-3 "  placeholder="last_name" required>
+       </div>
+       <div class="mb-3 " >
+        <input type="name" name="first_name" class="form-control rounded-3 "  placeholder="first_name" required>
+       </div>
+       <div class="mb-3 " >
+        <input type="name" name="username" class="form-control rounded-3 "  placeholder="username" required>
+       </div>
+       <div class="mb-3 " >
+        <input type="number" name="phoneNumber" class="form-control rounded-3 "  placeholder="phoneNumber" required>
+       </div>
+       <div class="mb-3 " >
+       {{form.as_p}}
+        <input type="name" name="referral" class="form-control rounded-3 "  placeholder="Referral" >
+       </div>
+      <div class="mb-3 " >
+        <input type="email" name="email" class="form-control rounded-3 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail Address" required>
+        
+      </div>
+      <div class="mb-3 " >
+        
+        <input type="password" name="password" class="form-control rounded-3 " id="exampleInputPassword1"placeholder='create password' required>
+      </div>
+      <div class="mb-3 " >
+        
+        <input type="password" name="password2" class="form-control rounded-3 " id="exampleInputPassword1"placeholder='Confirm password'required>
+      </div>
+
+       <div class="section-title mt-5" data-aos="fade-up">
+        <h2>Input your valid bank details</h2>
+         </div>
+
+         <div class="mb-3 " >
+          <input type="name" name="bankName" class="form-control rounded-3 "  placeholder="Bank Name in full" required>
+         </div>
+         <div class="mb-3 " >
+          <input type="name" name="accountName" class="form-control rounded-3 "  placeholder="Account Name" required>
+         </div>
+         <div class="mb-3 " >
+          <input type="number" name="accountNumber" class="form-control rounded-3 "  placeholder="Account number" required>
+          </div>
+         <div class="section-title mt-5" data-aos="fade-up">
+        <h2>Input your package coupon code</h2>
+         </div>
+         <div class="mb-3 " >
+          <input type="name" name="coupon" class="form-control rounded-3 "  placeholder="Coupon code for package of choice" required>
+         </div>
+      <div class="mb-3 form-check">
+       
+        <a href="" class="btn-get-started">Buy coupon code</a>
+      </div>
+      <button type="submit" class="btn btn-primarys" style="background-color: #eb5d1e; color: white;">Submit</button>
+      <marquee behavior="" direction="" class="text-warning">We want to belive that you have read the terms and condition before clicking the submit button for the package of your choice</marquee>
+      
+    </form>
+   
+  </div>
+ 
+
+  </main><!-- End #main -->
+  {% endblock %}
