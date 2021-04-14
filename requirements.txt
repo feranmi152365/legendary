@@ -6,12 +6,12 @@ django-simple-coupons==0.5
 django-state-field==0.3
 gunicorn==20.1.0
 # idna @ file:///tmp/build/80754af9/idna_1593446292537/work
-Pillow @ file:///C:/ci/pillow_1594298230227/work
+Pillow == 5.2.0
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
 python-dateutil==2.8.1
 pytz==2020.1
-requests @ file:///tmp/build/80754af9/requests_1592841827918/work
+# requests @ file:///tmp/build/80754af9/requests_1592841827918/work
 requests-oauthlib==1.3.0
 six==1.15.0
 urllib3==1.25.9
