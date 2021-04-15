@@ -29,12 +29,61 @@
                 {% comment %} {% if ref %} {% endcomment %}
                   {% comment %} {% for p in ref %} {% endcomment %}
 
-                <a href="" class="card-text " style="color: black;">href="http://legendinvestmentng.com/{{ref}}" </a>
+                <a href="http://legendinvestmentng.herokuapp.com/{{ref}}" class="card-text " style="color: black;"> <span style="color:blue;">Referal code :</span> {{ref}}</a>  <br> <br>
                   {% comment %} {% endfor %} {% endcomment %}
                 {% comment %} {% else%}
                   Go and  reffal
                 {% endif %} {% endcomment %}
-                <a href="#" class="btn btn-info text-white">withdraw</a>    <a href="#" class="btn btn-dark">daily task</a>
+                {% comment %} <a href="#" class="btn btn-info text-white">withdraw</a>    <a href="#" class="btn btn-dark">daily task</a> {% endcomment %}
+
+
+             {% comment %} <a href="" class=" text-primary " > href="http://" </a> <br> {% endcomment %}
+                <!-- Button trigger modal -->
+<button type="button"class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  withdraw
+</button> <a href="#" class="btn btn-dark">daily task</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Withdrawal Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+    
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" placeholder="Bank Name"  >
+           
+          </div>
+          <div class="mb-3">
+          
+            <input type="text" class="form-control" placeholder="Account Number" >
+          </div>
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" placeholder="Account Name" >
+          </div>
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" placeholder="#30,000" disabled >
+          </div>
+         <marquee behavior="" direction="right" class="text-warning">Kindly note that your money will be sent within a max of 48hrs if not kindly chat our customer care service</marquee>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </div>
+
+
+
               </div>
             </div>
           </div>

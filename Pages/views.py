@@ -6,3 +6,6 @@ def index(request):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+def vendors(request):
+    return render(request, 'pages/vendors.html')

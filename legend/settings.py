@@ -138,4 +138,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'legend/static')
 ]
+
+
+# Messages
+from django.contrib.messages import constants as messages
+Message_TAGS = {
+    messages.ERROR:'danger'
+}
+
 django_heroku.settings(locals())

@@ -1,0 +1,56 @@
+  {% extends 'base.html' %}
+
+  {% block content %}
+  
+  <!-- End Header -->
+  <br> <br> <br> <main id="main" class="justify-content-center">
+      <div class="container">
+        <div class="card">
+            <h5 class="card-header text-center " style="background-color: #eb5d1e; color: aliceblue;"> Vendors List</h5>
+            <div class="card-body">
+              
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        {% comment %} <th scope="col">Last</th> {% endcomment %}
+                        <th scope="col">WhatsApp</th>
+                        {% comment %} <th scope="col">Handle</th> {% endcomment %}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Legend TV</td>
+                        {% comment %} <td>Otto</td> {% endcomment %}
+                        <td><a href="https://api.whatsapp.com/send?phone=+2349029029412&text=Hello vendor i need coupon code">+23489342356</a></td>
+                        {% comment %} <td>@mdo</td> {% endcomment %}
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Good Vibez</td>
+                        {% comment %} <td>Thornton</td> {% endcomment %}
+                         <td><a href="https://api.whatsapp.com/send?phone=+2349072756781&text=Hello vendor i need coupon code">+23489342356</a></td>
+                        {% comment %} <td>@fat</td> {% endcomment %}
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Supremr Media</td>
+                        {% comment %} <td>Bird</td> {% endcomment %}
+                         <td><a href="https://api.whatsapp.com/send?phone=+2347031131275&text=Hello vendor i need coupon code">+23489342356</a></td>
+                        {% comment %} <td>@twitter</td> {% endcomment %}
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          
+        </div>
+    </div> 
+
+
+
+
+  </main> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+   {% endblock %}

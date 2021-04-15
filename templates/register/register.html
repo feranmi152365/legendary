@@ -13,20 +13,20 @@
     <form action="{% url 'register'%}" method="POST">
     {% csrf_token %}
       <div class="mb-3 " >
-        <input type="name" name="last_name" class="form-control rounded-3 "  placeholder="last_name" required>
+        <input type="name" name="last_name" class="form-control rounded-3 "  placeholder="Last_name" required>
        </div>
        <div class="mb-3 " >
-        <input type="name" name="first_name" class="form-control rounded-3 "  placeholder="first_name" required>
+        <input type="name" name="first_name" class="form-control rounded-3 "  placeholder="First_name" required>
        </div>
        <div class="mb-3 " >
-        <input type="name" name="username" class="form-control rounded-3 "  placeholder="username" required>
+        <input type="name" name="username" class="form-control rounded-3 "  placeholder="Username" required>
        </div>
        <div class="mb-3 " >
-        <input type="number" name="phoneNumber" class="form-control rounded-3 "  placeholder="phoneNumber" required>
+        <input type="number" name="phoneNumber" class="form-control rounded-3 "  placeholder="PhoneNumber" required>
        </div>
        <div class="mb-3 " >
        {{form.as_p}}
-        <input type="name" name="referral" class="form-control rounded-3 "  placeholder="Referral" >
+        <input type="name" name="referral" class="form-control rounded-3 "  placeholder="Referral (optional)" >
        </div>
       <div class="mb-3 " >
         <input type="email" name="email" class="form-control rounded-3 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail Address" required>
@@ -34,7 +34,7 @@
       </div>
       <div class="mb-3 " >
         
-        <input type="password" name="password" class="form-control rounded-3 " id="exampleInputPassword1"placeholder='create password' required>
+        <input type="password" name="password" class="form-control rounded-3 " id="exampleInputPassword1"placeholder='Create password' required>
       </div>
       <div class="mb-3 " >
         
@@ -42,11 +42,11 @@
       </div>
 
        <div class="section-title mt-5" data-aos="fade-up">
-        <h2> bank details</h2>
+        <h2> Bank details</h2>
          </div>
 
          <div class="mb-3 " >
-          <input type="name" name="bankName" class="form-control rounded-3 "  placeholder="Bank Name in full" required>
+          <input type="name" name="bankName" class="form-control rounded-3 "  placeholder="Bank Name    (e.g: gtb, uba, access ...)" required>
          </div>
          <div class="mb-3 " >
           <input type="name" name="accountName" class="form-control rounded-3 "  placeholder="Account Name" required>
@@ -55,14 +55,14 @@
           <input type="number" name="accountNumber" class="form-control rounded-3 "  placeholder="Account number" required>
           </div>
          <div class="section-title mt-5" data-aos="fade-up">
-        <h2> package coupon code</h2>
+        <h2> Package coupon code</h2>
          </div>
          <div class="mb-3 " >
           <input type="name" name="coupon" class="form-control rounded-3 "  placeholder="Coupon code for package of choice" required>
          </div>
       <div class="mb-3 form-check">
        
-        <a href="" class="btn-get-started">Buy coupon code</a>
+        <a href="{% url 'vendors'%}" class="btn-get-started">Buy coupon code</a>
       </div>
       <button type="submit" class="btn btn-primarys" style="background-color: #eb5d1e; color: white;">Submit</button>
     

@@ -1389,3 +1389,16 @@ section {
     padding: 3px 0;
   }
 }
+.input-group-text{
+  background-color:white;
+  border:none;
+  border-bottom:4px solid #eb5d1e;
+}
+.form-control{
+  height:50px;
+  border:none;
+  border-bottom:4px solid #eb5d;
+}
+.form-control:focus{
+  box-shadow:none;
+}
