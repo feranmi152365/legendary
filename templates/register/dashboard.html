@@ -6,7 +6,7 @@
     <div class="container offset-lg-2 ">
 
     <div class="card col-lg-8 shadow-lg ">
-      <h5 class="card-header bg-secondary text-white text-center">hello, {{user.last_name}} {{user.first_name}}</h5>
+      <h5 class="card-header bg-secondary text-white text-center">Welcome, {{user.last_name}} {{user.first_name}}</h5>
       {% include 'partials/_alert.html' %}
       
       <div class="card-body">
@@ -29,7 +29,7 @@
                 {% comment %} {% if ref %} {% endcomment %}
                   {% comment %} {% for p in ref %} {% endcomment %}
 
-                <p class="card-text" style="color: #4ddcef;">Referral Link: {{ref}} </p>
+                <a href="" class="card-text " style="color: black;">href="http://legendinvestmentng.com/{{ref}}" </a>
                   {% comment %} {% endfor %} {% endcomment %}
                 {% comment %} {% else%}
                   Go and  reffal
@@ -47,15 +47,15 @@
               <h5 class="card-title text-success bx bx-calendar"> Date reg: {{user.date_joined}}</h5>  <hr>
             </div>
             <div class="col-6">
-              <h5 class="card-title text-warning bx bx-calendar-edit"> Next Withdraw: sun Feb 21 2021</h5>  <hr>
+              <h5 class="card-title text-warning bx bx-calendar-edit"> Next Withdraw: </h5>  <hr>
             </div>
             </div>
             <div class="row">
               <div class="col-6">
-            <h5 class="card-title text-danger bx bx-power-off"> Unpaid Referral: 1</h5>  <hr>
+            <h5 class="card-title text-danger bx bx-power-off"> Unpaid Referral: </h5>  <hr>
           </div>
           <div class="col-6">
-            <h5 class="card-title  text-primary bx bx-money"> Paid Referral: 1</h5>  <hr>
+            <h5 class="card-title  text-primary bx bx-money"> Paid Referral: </h5>  <hr>
           </div>
           </div>
           <div class="row">
@@ -66,14 +66,7 @@
           <h5 class="card-title  bx bx-user" style="color: steelblue;"> Total Referrals:</h5>  <hr>
         </div>
         </div>
-        <div class="row">
-          <div class="col-6">
-        <h5 class="card-title text-whites bx bx-move" style="color: purple;">Total Earning:</h5>  <hr>
-      </div>
-      <div class="col-6">
-        <h5 class="card-title  bx bx-plus-circle" style="color:coral;"> cycles:0</h5>  <hr>
-      </div>
-      </div>
+        
       <div class="row">
         <div class="col-6">
       <h5 class="card-title text-whites bx bx-arrow-back" style="color: rgb(0, 128, 79);"> Previous Referrals:</h5> <hr>

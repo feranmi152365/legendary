@@ -1,0 +1,103 @@
+body {
+    background-color: #ecf0f1;
+  }
+  
+  .card {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .sign-in-panel {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: #eb5d1e;
+    margin: 0 auto;
+    margin-top: -70px;
+    border-radius: 50%;
+  }
+  
+  .sign-in-icon {
+    margin-top: 23px;
+    color: white;
+  }
+  
+  .image {
+    text-align: center;
+  }
+  
+  .first-input {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  
+  .last-input {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  
+  .input-group-text {
+    background-color: white;
+    border: none;
+    border-bottom: 4px solid #eb5d1e;
+    color: #eb5d1e;
+  }
+  
+  .form-control {
+    height: 50px;
+    border: none;
+    border-bottom: 4px solid #eb5d1e;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+  }
+  
+  .form-button {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .btn-submit {
+    width: 400px;
+    height: 60px;
+    background-color: #eb5d1e;
+    border-color: #eb5d1e;
+    border-radius: 0.1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  
+  .btn-submit:focus {
+    box-shadow: none;
+  }
+  
+  .alert-danger {
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 0.1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    color: white;
+    margin-bottom: 30px;
+    visibility: hidden;
+  }
+  
+  .fake-shadow-div {
+    text-align: center;
+  }
+  
+  .fake-shadow {
+    width: 600px;
+    height: 100px;
+  }
